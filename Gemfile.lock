@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/rails/activemodel-serializers-xml
+  revision: 694f4071c6b16e4c8597cc323c241b5f787b3ea8
+  specs:
+    activemodel-serializers-xml (1.0.2)
+      activemodel (>= 5.0.0.a)
+      activesupport (>= 5.0.0.a)
+      builder (~> 3.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -51,6 +60,12 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.7)
     crass (1.0.6)
+    draper (4.0.1)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
+      activemodel-serializers-xml (>= 1.0)
+      activesupport (>= 5.0)
+      request_store (>= 1.0)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.13.1)
@@ -113,6 +128,8 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    request_store (1.5.0)
+      rack (>= 1.4)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -162,8 +179,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activemodel-serializers-xml!
   byebug
   coffee-rails (~> 4.2)
+  draper
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
